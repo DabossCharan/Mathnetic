@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drag and Drop Images</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .draggable {
+            position: absolute;
+            cursor: grab;
+            user-select: none;
+            width: 100px;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="div1"></div>
+
+    <script src="BlockObject.js"></script>
+    <script src="TextGenerator.js"></script>
+    <script src="DragAndSnaps.js"></script>
+
+    <input type="button" value="GetText" onclick="downloadTextFile('test',getFile(my3DArray));">
+
+    <script>
+
+        let block1 = new Peice('1', "C:/Users/Owner/Desktop/puzzleProgram/Threatening_Miku_Better_Brows.png",my3DArray);
+        draggables.push(draggables, block1);
+        let block2 = new Peice('2', "C:/Users/Owner/Desktop/puzzleProgram/Threatening_Miku_Better_Brows.png",my3DArray);
+        draggables.push(draggables, block2);
+        let block3 = new Peice('3', "C:/Users/Owner/Desktop/puzzleProgram/Threatening_Miku_Better_Brows.png",my3DArray);
+        draggables.push(draggables, block3);
+    </script>
+
+</body>
+</html>
